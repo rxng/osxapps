@@ -67,3 +67,8 @@ brew install tag
 ## python
 
 pip install pyteaser
+
+## npm
+
+ImageOptim-cli
+> npm install -g imageoptim-cli
