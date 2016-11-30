@@ -30,6 +30,10 @@ Keyboard Maestro
 
 > Automation must-have - never manually repeat a task again! <https://www.macstories.net/tag/keyboard-maestro/>
 
+Markoff
+
+> A free markdown previewer, if you can't afford Marked 2 <https://robots.thoughtbot.com/markoff-free-markdown-previewer>
+
 Omnidisksweeper
 
 > Forget daisy disk. This free alternative analyses your disk space fast. and free. <http://www.dodownload.com/os-utils/file-disk/omnidisksweeper.html>
@@ -56,7 +60,9 @@ Sequel
 
 ## brew
 
-brew cask install quicklook-csv
+brew cask install qlcolorcode quicklook-csv qlstephen qlmarkdown quicklook-json betterzipql qlimagesize qlvideo
+
+brew install tag
 
 ## python
 
