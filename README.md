@@ -57,18 +57,3 @@ Rambox
 Sequel
 
 > mysql through GUI! <https://www.bluem.net/en/mac/gatekeeper/>
-
-## brew
-
-brew cask install qlcolorcode quicklook-csv qlstephen qlmarkdown quicklook-json betterzipql qlimagesize qlvideo
-
-brew install tag
-
-## python
-
-pip install pyteaser
-
-## npm
-
-ImageOptim-cli
-> npm install -g imageoptim-cli
