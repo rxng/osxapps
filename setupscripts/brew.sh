@@ -7,6 +7,6 @@ fi
 
 brew doctor
 
-brew install npm tag
+brew install npm tag autojump
 
 brew cask install qlcolorcode quicklook-csv qlstephen qlmarkdown quicklook-json betterzipql qlimagesize qlvideo
