@@ -27,6 +27,9 @@ brew install homebrew/dupes/screen
 
 # nice packages
 brew install npm tag autojump
+#brew install libtiff libjpeg webp little-cms2
+#pip install newspaper
+#curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python2.7
 
 # quicklook stuff
 brew cask install qlcolorcode quicklook-csv qlstephen qlmarkdown quicklook-json betterzipql qlimagesize qlvideo
