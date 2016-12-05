@@ -11,4 +11,4 @@ if test ! $(which npm); then
    brew install npm
 fi
 
-npm install -g imageoptim-cli
+npm install -g imageoptim-cli node-readability
