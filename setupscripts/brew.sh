@@ -35,6 +35,6 @@ brew install npm tag autojump
 #curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python2.7
 
 # quicklook stuff
-brew cask install qlcolorcode quicklook-csv qlstephen qlmarkdown quicklook-json betterzipql qlimagesize qlvideo
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 brew cleanup
