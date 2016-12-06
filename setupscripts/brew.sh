@@ -25,6 +25,9 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
+# image libraries
+brew install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush pngquant jonof/kenutils/pngout
+
 # nice packages
 brew install npm tag autojump
 #brew install libtiff libjpeg webp little-cms2
