@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 if test ! $(which npm); then
@@ -13,3 +12,5 @@ if test ! $(which npm); then
 fi
 
 npm install -g imageoptim-cli node-readability requests
+
+npm install svgo -g
