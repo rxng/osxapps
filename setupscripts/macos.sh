@@ -104,6 +104,13 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
 defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
 
+# Expand print panel dialog boxes by default
+defaults write -g PMPrintingExpandedStateForPrint -boolean true
+defaults write -g PMPrintingExpandedStateForPrint2 -bool true
+
+# Minimize windows into their application’s icon
+defaults write com.apple.dock minimize-to-application -bool true
+
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
 	"Opera" "Photos" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
