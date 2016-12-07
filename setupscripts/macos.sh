@@ -115,7 +115,7 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"list-type" = 1;}; "tile-type" = "recents-tile";}'; killall Dock
 
 # Hide QuickLook on deactivation or application switch:
-$ defaults write com.apple.finder QLHidePanelOnDeactivate -boolean
+defaults write com.apple.finder QLHidePanelOnDeactivate -boolean false
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
