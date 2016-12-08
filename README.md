@@ -32,11 +32,15 @@ Keyboard Maestro
 
 Markoff
 
-> A free markdown previewer, if you can't afford Marked 2 <https://robots.thoughtbot.com/markoff-free-markdown-previewer>
+> A free markdown previewer, if you can't afford [Marked 2](http://markedapp.com) <https://robots.thoughtbot.com/markoff-free-markdown-previewer>
 
 Omnidisksweeper
 
 > Forget daisy disk. This free alternative analyses your disk space fast. and free. <http://www.dodownload.com/os-utils/file-disk/omnidisksweeper.html>
+
+Onyx
+
+> The must-have system utilities and cleaner - free too!. <http://www.titanium.free.fr/onyx.html>
 
 Postbox
 
