@@ -101,8 +101,9 @@ defaults write com.apple.commerce AutoUpdate -bool true
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Expand 'Save As…' dialog boxes by default
-defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
-defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Expand print panel dialog boxes by default
 defaults write -g PMPrintingExpandedStateForPrint -boolean true
@@ -116,6 +117,22 @@ defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"lis
 
 # Hide QuickLook on deactivation or application switch:
 defaults write com.apple.finder QLHidePanelOnDeactivate -boolean false
+
+# "Turn off keyboard illumination when computer is not used for 5 minutes"
+defaults write com.apple.BezelServices kDimTime -int 300
+
+# "Disable the warning when changing a file extension? (y/n)"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# "Allowing text selection in Quick Look/Preview in Finder by default"
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# "Privacy: Don't send search queries to Apple"
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
+# Disable Sudden Motion Sensor
+pmset -a sms 0
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
