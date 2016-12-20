@@ -35,7 +35,7 @@ brew install npm tag autojump
 #curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python2.7
 
 # python stuff
-brew install pyenv pyenv-virtualenvwrapper
+brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
 
 # quicklook stuff
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo Caskroom/cask/animated-gif-quicklook
