@@ -140,4 +140,14 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Transmission" "Tweetbot" "Twitter" "iCal"; do
 	killall "${app}" &> /dev/null
 done
+
+#Modules - Uncomment to install the packages
+# sh brew.sh
+# sh gem.sh
+# sh npm.sh
+# sh pip.sh
+
+
+
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
