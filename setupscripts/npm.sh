@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 
 if test ! $(which npm); then
-   if test ! $(which brew); then
-     echo "Installing homebrew..."
-     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-   fi
-   brew doctor
-
    echo "Installing npm..."
-   brew install npm
+   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+   nvm install node
+   npm -g install npm
 fi
 
 npm install -g imageoptim-cli node-readability requests

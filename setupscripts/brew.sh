@@ -10,7 +10,7 @@ brew doctor
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+#export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
@@ -29,15 +29,19 @@ brew install homebrew/dupes/screen
 brew install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush pngquant jonof/kenutils/pngout
 
 # nice packages
-brew install npm tag autojump
+brew install tag autojump rbenv trash
 #brew install libtiff libjpeg webp little-cms2
-#pip install newspaper
-#curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python2.7
 
 # python stuff
-brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper 
+brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
 
 # quicklook stuff
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo Caskroom/cask/animated-gif-quicklook
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo Caskroom/cask/animated-gif-quicklook betterzipql
 
 brew cleanup
+
+# update bash_profile
+echo "if which pyenv > /dev/null; then eval \"\$(pyenv init -)\"; fi" >> ~/.bash_profile
+echo "if which pyenv-virtualenv-init > /dev/null; then eval \"\$(pyenv virtualenv-init -)\"; fi" >> ~/.bash_profile
+echo "[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh" >> ~/.bash_profile
+source ~/.bash_profile

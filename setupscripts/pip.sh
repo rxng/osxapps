@@ -5,4 +5,9 @@ if test ! $(which pip); then
   easy_install pip
 fi
 
-pip install requests requests_cache bs4
+pip install requests requests_cache bs4 
+
+
+#newspaper
+
+#curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python2.7
