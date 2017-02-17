@@ -5,7 +5,9 @@ if test ! $(which pip); then
   easy_install pip
 fi
 
-pip install requests requests_cache bs4 
+pip install requests requests_cache bs4
+
+pip install cheat
 
 
 #newspaper
